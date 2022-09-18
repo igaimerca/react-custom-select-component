@@ -47,14 +47,14 @@ function Select() {
     };
 
     return (
-        <div onClick={() => setVisible(true)} className="flex flex-col gap-2">
-            <div className="h-auto px-1 py-2 border-2 border-blue-500 rounded-sm shadow-md min-h-[3rem] w-80 flex flex-wrap gap-3 items-center">
+        <div onClick={() => setVisible(true)} className="flex flex-col gap-2 w-96">
+            <div className="h-auto p-2 border-2 border-gray-300 rounded-lg min-h-[3rem] flex flex-wrap gap-3 items-center">
 
                 {selected &&
                     selected.map((option) => (
-                        <span className="text-base rounded-sm">
-                            <small className="px-2 py-1 bg-gray-400">{option}</small>
-                            <small onClick={() => handleRemoveOption(option)} className="h-full px-2 py-1 bg-gray-400 cursor-not-allowed hover:bg-red-200 hover:text-red-800">
+                        <span className="text-lg">
+                            <small className="px-2 py-1 bg-gray-300">{option}</small>
+                            <small onClick={() => handleRemoveOption(option)} className="h-full px-2 py-1 bg-gray-300 cursor-not-allowed hover:bg-red-200 hover:text-red-800">
                                 X
                             </small>
                         </span>
