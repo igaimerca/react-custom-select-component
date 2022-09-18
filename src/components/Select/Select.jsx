@@ -43,7 +43,7 @@ function Select() {
 
   return (
     <div className="flex flex-col gap-2 w-96">
-      <div onClick={() => setVisible(!visible)} className="h-auto p-2 border-2 border-gray-300 rounded-lg min-h-[3rem] flex flex-wrap gap-3 items-center">
+      <div onClick={() => setVisible(true)} className="h-auto p-2 border-2 border-gray-300 rounded-lg min-h-[3rem] flex flex-wrap gap-3 items-center">
         {selected &&
           selected.map((option, i) => (
             <span key={i} className="text-lg">
